@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ITT632_Group_Project</string>
+
+    <array name="genres">
+        <item>Most Favourite</item>
+        <item>Favourite</item>
+        <item>Average</item>
+    </array>
+</resources>

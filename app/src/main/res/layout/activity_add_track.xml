@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFD96"
+    tools:context=".AddTrackActivity">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Favourite Artist List"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#f8d71c"
+        android:padding="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+        <TextView
+            android:id="@+id/textViewArtistName"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <EditText
+            android:id="@+id/editTextTrackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Artist's Song"
+            android:background="#fff"
+            android:layout_toLeftOf="@+id/buttonAddTrack"
+            android:layout_below="@id/textViewArtistName"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTrackName"
+            android:layout_centerHorizontal="true"
+            android:text="Rate 1 to 5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="8dp" />
+
+
+        <SeekBar
+            android:layout_weight="1"
+            android:id="@+id/seekBarRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRating"
+            android:max="5"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonAddTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-4dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button_background"
+            android:padding="12dp"
+            android:text="Add"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLayout"
+        android:text="Songs"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginTop="12dp"/>
+
+    <ListView
+        android:id="@+id/listViewTracks"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:padding="16dp"/>
+</RelativeLayout>

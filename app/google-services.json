@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "757285016074",
+    "firebase_url": "https://itt632-group-project-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "itt632-group-project",
+    "storage_bucket": "itt632-group-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757285016074:android:64256e31ab80d0c74485f3",
+        "android_client_info": {
+          "package_name": "com.fizazaan.itt632_group_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRSJOq7TUzJdvZVlJz_X4GiQ1gK40atJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

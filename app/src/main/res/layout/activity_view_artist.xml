@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFD96"
+    tools:context=".ActivityViewArtist">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Favourite Artist List"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#f8d71c"
+        android:padding="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+<Button
+android:id="@+id/button_choose_image"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Choose file"
+    android:textColor="#000000"
+    android:background="@drawable/rounded_button_background"
+    />
+
+<EditText
+android:id="@+id/edit_text_file_name"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_toEndOf="@+id/button_choose_image"
+android:hint="Enter file name"
+android:background="#FFF176"
+    android:textColor="#000000"
+    />
+
+<ImageView
+android:id="@+id/image_view"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_above="@id/progress_bar"
+android:layout_below="@id/edit_text_file_name"
+android:layout_marginTop="24dp"
+android:background="#FFF176"
+    />
+
+<ProgressBar
+android:id="@+id/progress_bar"
+style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_above="@+id/button_upload"
+android:layout_alignParentStart="true"
+android:layout_marginBottom="16dp"
+android:progressTint="#FFEB3B"
+    />
+
+<Button
+android:id="@+id/button_upload"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:text="Upload"
+    android:textColor="#000000"
+    android:background="@drawable/rounded_button_background"
+    />
+
+<TextView
+android:id="@+id/text_view_show_uploads"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/button_upload"
+android:layout_alignTop="@+id/button_upload"
+android:layout_marginStart="25dp"
+android:layout_toEndOf="@+id/button_upload"
+android:gravity="center"
+android:text="Show Uploads"
+android:textSize="16sp"
+android:textColor="#000000"
+    />
+
+
+</RelativeLayout>
+</RelativeLayout>
+
